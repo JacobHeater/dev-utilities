@@ -17,7 +17,7 @@ function cmd(command, exitOnError = true, defaultValue = null) {
   try {
     return execSync(command).toString();
   } catch (e) {
-    console.error(e);
+    console.error(e.stdout.toString());
 
     if (exitOnError) {
       process.exit(1);
