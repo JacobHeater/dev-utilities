@@ -1,0 +1,28 @@
+{
+  "name": "dev-utilities",
+  "version": "0.0.1",
+  "description": "A set of development utilities to optimize development workflows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHeater/dev-utilities.git"
+  },
+  "keywords": [
+    "development",
+    "utilities",
+    "git",
+    "node"
+  ],
+  "author": "Jacob Heater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobHeater/dev-utilities/issues"
+  },
+  "homepage": "https://github.com/JacobHeater/dev-utilities#readme",
+  "dependencies": {
+    "yargs": "^15.3.1"
+  }
+}
