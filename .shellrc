@@ -1,0 +1,33 @@
+# Sample .shellrc file
+# You can plug these into your shell config
+# to expose the functionality of the utilities.
+
+export UTILITIES_PATH="<your path here>"
+
+function git-delete-all-branches-except-master-and-current() {
+  node $UTILITIES_PATH/git/branch/delete-all-except-master-and-current.js
+}
+
+function git-force-delete-all-branches-except-master-and-current() {
+  node $UTILITIES_PATH/git/branch/delete-all-except-master-and-current.js --force=1
+}
+
+function git-push-origin-current-branch() {
+  node $UTILITIES_PATH/git/push/push-origin-current-branch.js
+}
+
+function git-commit-all-with-message() {
+  node $UTILITIES_PATH/git/commit/add-and-commit-with-message.js --message=$1
+}
+
+function git-commit-all-with-message-and-push() {
+  git-commit-all-with-message $1 && git-push-origin-current-branch
+}
+
+function git-revert-last-commit() {
+  node $UTILITIES_PATH/git/revert/revert-last-commit.js
+}
+
+function git-pop-last-commit() {
+  node $UTILITIES_PATH/git/commit/pop-last-commit.js
+}
