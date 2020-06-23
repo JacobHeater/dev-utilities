@@ -31,3 +31,7 @@ function git-revert-last-commit() {
 function git-pop-last-commit() {
   node $UTILITIES_PATH/git/commit/pop-last-commit.js
 }
+
+function git-checkout-master-and-sync() {
+  node $UTILITIES_PATH/git/update/checkout-master-and-sync.js
+}
