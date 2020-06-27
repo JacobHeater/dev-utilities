@@ -1,6 +1,4 @@
-# Sample .shellrc file
-# You can plug these into your shell config
-# to expose the functionality of the utilities.
+# Utilties environment rc file
 
 export UTILITIES_PATH="<your path here>"
 
@@ -30,8 +28,4 @@ function git-revert-last-commit() {
 
 function git-pop-last-commit() {
   node $UTILITIES_PATH/git/commit/pop-last-commit.js
-}
-
-function git-checkout-master-and-sync() {
-  node $UTILITIES_PATH/git/update/checkout-master-and-sync.js
 }
