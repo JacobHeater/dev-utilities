@@ -24,6 +24,7 @@
   "homepage": "https://github.com/JacobHeater/dev-utilities#readme",
   "dependencies": {
     "fs-extra": "^9.0.1",
+    "readline-sync": "^1.4.10",
     "yargs": "^15.3.1"
   }
 }

@@ -1,4 +1,8 @@
-# Utilties environment rc file
+#############################################
+#############################################
+# Begin Dev Utilties
+#############################################
+#############################################
 
 export UTILITIES_PATH="<your path here>"
 
@@ -29,3 +33,21 @@ function git-revert-last-commit() {
 function git-pop-last-commit() {
   node $UTILITIES_PATH/git/commit/pop-last-commit.js
 }
+
+function git-fetch-prune() {
+  node $UTILITIES_PATH/git/fetch/fetch-and-prune.js
+}
+
+function git-update-master() {
+  node $UTILITIES_PATH/git/branch/checkout/checkout-master-and-sync.js
+}
+
+function git-checkout-interactive() {
+  node $UTILITIES_PATH/git/branch/checkout/checkout-select-interactive.js
+}
+
+#############################################
+#############################################
+# End Dev Utilties
+#############################################
+#############################################
