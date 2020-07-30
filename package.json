@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/JacobHeater/dev-utilities#readme",
   "dependencies": {
+    "clipboardy": "^2.3.0",
     "fs-extra": "^9.0.1",
     "readline-sync": "^1.4.10",
     "yargs": "^15.3.1"

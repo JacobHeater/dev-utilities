@@ -46,6 +46,10 @@ function git-checkout-interactive() {
   node $UTILITIES_PATH/git/branch/checkout/checkout-select-interactive.js
 }
 
+function git-copy-current-branch-to-clipboard() {
+  node $UTILITIES_PATH/git/branch/copy-current-branch-name-to-clipboard.js
+}
+
 #############################################
 #############################################
 # End Dev Utilties
