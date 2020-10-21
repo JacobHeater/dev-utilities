@@ -50,6 +50,14 @@ function git-copy-current-branch-to-clipboard() {
   node $UTILITIES_PATH/git/branch/copy-current-branch-name-to-clipboard.js
 }
 
+function git-toggle-br() {
+  node $UTILITIES_PATH/git/branch/checkout/toggle-branch.js
+}
+
+function git-pull-merge-master-to-current() {
+  node $UTILITIES_PATH/git/merge/pull-master-and-merge-master-into-current.js
+}
+
 #############################################
 #############################################
 # End Dev Utilties

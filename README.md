@@ -21,6 +21,12 @@ is not finite, and is growing and changing regularly.
 See the `.shellrc` file, and you can add the functions
 as part of your existing shell configuration.
 
+## Building
+
+Run `npm run build` to output the `.shellrc` file to the
+`bin/shell` directory. This will produce a fully functional
+shell config file that you can use to call `source` on.
+
 ## Contributing
 
 Please submit pull requests for review to add your utilities

@@ -4,7 +4,7 @@
   "description": "A set of development utilities to optimize development workflows",
   "main": "index.js",
   "scripts": {
-    "build-rc": "node scripts/shell/build-rc-file.js"
+    "build": "node scripts/shell/build-rc-file.js"
   },
   "repository": {
     "type": "git",
