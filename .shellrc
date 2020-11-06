@@ -58,6 +58,10 @@ function git-pull-merge-master-to-current() {
   node $UTILITIES_PATH/git/merge/pull-master-and-merge-master-into-current.js
 }
 
+function git-new-branch() {
+  node $UTILITIES_PATH/git/branch/checkout/checkout-new-branch.js --branch=$1
+}
+
 #############################################
 #############################################
 # End Dev Utilties
