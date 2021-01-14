@@ -1,18 +1,19 @@
 const { cmd } = require(`../../io/cmd`);
 const { argv } = require(`yargs`);
 const { getAllBranches } = require(`./get-all-branches`);
+const { getMainBranchName } = require('./get-main-branch-name');
 
-const excludedBranches = [`master`];
+const excludedBranches = [getMainBranchName()];
 
 if (require.main === module) {
-  deleteAllExeptMasterAndCurrentBranch(argv.force);
+  deleteAllExeptMainAndCurrentBranch(argv.force);
 }
 
 module.exports = {
-  deleteAllExeptMasterAndCurrentBranch
+  deleteAllExeptMainAndCurrentBranch
 };
 
-function deleteAllExeptMasterAndCurrentBranch(force = false) {
+function deleteAllExeptMainAndCurrentBranch(force = false) {
   console.log(`Enumerating branches for cleanup...`);
 
   const branches = getAllBranches()

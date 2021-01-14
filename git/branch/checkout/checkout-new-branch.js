@@ -2,6 +2,7 @@ const { getCurrentBranch } = require('../get-current-branch');
 const { argv } = require('yargs');
 const readline = require('readline-sync');
 const { cmd } = require('../../../io/cmd');
+const { getMainBranchName } = require('../get-main-branch-name');
 
 if (require.main === module) {
   if (!argv.branch) {
@@ -16,8 +17,8 @@ module.exports = {
   checkoutNewBranch
 };
 
-function checkoutNewBranch(branch, checkMaster = true) {
-  if (checkMaster && getCurrentBranch().clean !== 'master' && !readline.keyInYN('You are not currently on master. Do you wish to continue?')) {
+function checkoutNewBranch(branch, checkMain = true) {
+  if (checkMain && getCurrentBranch().clean !== getMainBranchName() && !readline.keyInYN(`You are not currently on ${getMainBranchName()}. Do you wish to continue?`)) {
     console.log('Canceled.');
     process.exit(0);
   }
