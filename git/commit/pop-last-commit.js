@@ -1,4 +1,4 @@
-const { cmd } = require(`../../io/cmd`);
+const { cmd } = require('../../stdio/cmd');
 const { searchLinesForFirstMatch, ioToLines, getCommitFromCommitLog } = require('../helpers');
 
 if (require.main === module) {

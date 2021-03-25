@@ -1,6 +1,6 @@
-const { cmd } = require(`../../io/cmd`);
-const { argv } = require(`yargs`);
-const { getAllBranches } = require(`./get-all-branches`);
+const { cmd } = require('../../stdio/cmd');
+const { argv } = require('yargs');
+const { getAllBranches } = require('./get-all-branches');
 const { getMainBranchName } = require('./get-main-branch-name');
 
 const excludedBranches = [getMainBranchName()];

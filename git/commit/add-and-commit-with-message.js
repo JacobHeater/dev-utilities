@@ -1,5 +1,5 @@
-const { cmd } = require(`../../io/cmd`);
-const { argv } = require(`yargs`);
+const { cmd } = require('../../stdio/cmd');
+const { argv } = require('yargs');
 
 if (require.main === module) {
   addAndCommitWithMessage(argv.message);

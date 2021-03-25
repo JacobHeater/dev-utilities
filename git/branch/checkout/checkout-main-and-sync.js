@@ -1,4 +1,4 @@
-const { cmd } = require('../../../io/cmd');
+const { cmd } = require('../../../stdio/cmd');
 const { fetchAndPrune } = require('../../fetch/fetch-and-prune');
 const { getMainBranchName, MASTER_BRANCH_NAME } = require('../get-main-branch-name');
 

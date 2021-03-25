@@ -1,5 +1,5 @@
-const { cmd } = require(`../../io/cmd`);
-const { ioToLines } = require(`../helpers`);
+const { cmd } = require('../../stdio/cmd');
+const { ioToLines } = require('../helpers');
 
 module.exports = {
   getAllBranches

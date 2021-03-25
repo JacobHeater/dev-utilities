@@ -1,5 +1,5 @@
-const { cmd } = require(`../../io/cmd`);
-const { getCurrentBranch } = require(`../branch/get-current-branch`);
+const { cmd } = require('../../stdio/cmd');
+const { getCurrentBranch } = require('../branch/get-current-branch');
 
 if (require.main === module) {
   gitPushOriginCurrentBranch();
