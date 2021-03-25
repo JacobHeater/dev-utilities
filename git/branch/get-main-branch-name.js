@@ -1,5 +1,8 @@
+const MASTER_BRANCH_NAME = 'master';
+
 module.exports = {
-  getMainBranchName
+  getMainBranchName,
+  MASTER_BRANCH_NAME,
 };
 
 if (require.main === module) {
