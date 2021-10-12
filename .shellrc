@@ -43,6 +43,10 @@ function git-update-main() {
   node $UTILITIES_PATH/git/branch/checkout/checkout-main-and-sync.js
 }
 
+function git-update-current-branch() {
+  node $UTILITIES_PATH/git/merge/pull-current-branch.js --branch=$1
+}
+
 function git-checkout-interactive() {
   node $UTILITIES_PATH/git/branch/checkout/checkout-select-interactive.js
 }

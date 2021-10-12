@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run build-rc
+npm run build
 source ./bin/shell/.shellrc
