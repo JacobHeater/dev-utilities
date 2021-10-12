@@ -1,7 +1,7 @@
 const { argv } = require('yargs');
 const readline = require('readline-sync');
 const { getAllBranches } = require('../get-all-branches');
-const { cmd } = require('../../../io/cmd');
+const { cmd } = require('../../../stdio/cmd');
 const { fetchAndPrune } = require('../../fetch/fetch-and-prune');
 
 if (argv.fetch) {

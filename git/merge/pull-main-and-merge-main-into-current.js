@@ -1,4 +1,4 @@
-const { cmd } = require('../../io/cmd');
+const { cmd } = require('../../stdio/cmd');
 const { gitCheckoutMainAndSync } = require('../branch/checkout/checkout-main-and-sync');
 const { gitToggleBranch } = require('../branch/checkout/toggle-branch');
 const { getMainBranchName } = require('../branch/get-main-branch-name');

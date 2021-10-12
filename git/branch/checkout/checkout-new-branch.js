@@ -1,7 +1,7 @@
 const { getCurrentBranch } = require('../get-current-branch');
 const { argv } = require('yargs');
 const readline = require('readline-sync');
-const { cmd } = require('../../../io/cmd');
+const { cmd } = require('../../../stdio/cmd');
 const { getMainBranchName } = require('../get-main-branch-name');
 
 if (require.main === module) {
